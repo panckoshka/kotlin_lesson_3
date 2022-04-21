@@ -13,7 +13,7 @@ class DifferentCommissionKtTest {
         val exception = assertThrows(Exception::class.java) {
             calcCommission(nameCard = "VK Pay", payment = 15_100, monthPayments = 40_100)
         }
-        assertEquals("Что-то пошло не так", exception.message)
+        assertEquals("", exception.message)
     }
 
     @Test
